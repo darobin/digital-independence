@@ -46,7 +46,7 @@ p.subtitle {
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 4rem 0;
   padding: 0.5rem;
 }
 h2, h3 {
@@ -56,9 +56,34 @@ h2, h3 {
 h2 + p, h3 + p, h2 + ul, h3 + ul {
   margin-top: 0;
 }
+p {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 a {
   color: var(--highlight);
   text-decoration: none;
+}
+.lead {
+  font-weight: bold;
+  color: var(--highlight);
+  font-size: 1.2em;
+}
+.sublead {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+li strong {
+  font-weight: bold;
+  color: var(--highlight);
+  font-variant: small-caps;
+}
+ul.details li::marker {
+  content: "— ";
+  /* list-style-type: "—"; */
+}
+.person {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width:500px) {
