@@ -12,6 +12,7 @@
 
 :root {
   --highlight: #132d85;
+  --starlight: #fcc30b;
   --heading-family: Catamaran, sans-serif;
   --body-family: Mulish, sans-serif;
 }
@@ -36,6 +37,17 @@ h1 {
   margin: 0;
   padding: 1rem 0.5rem 0.5rem 0.5rem;
   text-transform: uppercase;
+  position: relative;
+}
+p.subtitle {
+  color: var(--highlight);
+  font-family: var(--heading-family);
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.5rem;
 }
 h2, h3 {
   margin-bottom: 0;
