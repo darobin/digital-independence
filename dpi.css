@@ -102,7 +102,7 @@ ul.details li::marker {
   text-decoration: underline;
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:600px) {
   h1, p.subtitle {
     font-size: 2rem;
   }
