@@ -73,6 +73,9 @@ p {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+li {
+  padding-right: 0.5rem;
+}
 a {
   color: var(--highlight);
   text-decoration: none;
@@ -87,7 +90,7 @@ a {
   font-size: 1.2em;
 }
 li strong {
-  font-weight: bold;
+  font-weight: 800;
   color: var(--highlight);
   font-variant: small-caps;
 }
@@ -100,7 +103,7 @@ ul.details li::marker {
 }
 
 @media only screen and (max-width:500px) {
-  h1 {
+  h1, p.subtitle {
     font-size: 2rem;
   }
   body {
@@ -108,6 +111,13 @@ ul.details li::marker {
     font-weight: normal;
   }
   main {
-    margin: 1rem auto;
+    margin: 0 auto;
+  }
+  p {
+    padding-left: 1rem;
+    padding-right: 1rem;  
+  }
+  li {
+    padding-right: 1rem;  
   }
 }
