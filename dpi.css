@@ -17,6 +17,10 @@
   --body-family: Mulish, sans-serif;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: var(--body-family);
   font-size: 1.25rem;
@@ -25,7 +29,16 @@ body {
 }
 main {
   margin: 4rem auto;
-  max-width: 80ch;
+  max-width: 60rem;
+}
+footer {
+  margin: 4rem auto 0 auto;
+  max-width: 60rem;
+  background: var(--highlight);
+  color: var(--starlight);
+  text-align: right;
+  padding: 0 0.5rem 0 0.5rem;
+  font-size: 2rem;
 }
 h1 {
   background: var(--highlight);
