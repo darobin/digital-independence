@@ -27,12 +27,6 @@ main {
   max-width: 80ch;
 }
 h1 {
-  /* font-family: var(--heading-family);
-  font-weight: 700;
-  font-size: 3.75rem;
-  line-height: 1;
-  margin: 0;
-  padding: 0; */
   background: var(--highlight);
   color: white;
   font-family: var(--heading-family);
@@ -40,7 +34,7 @@ h1 {
   font-weight: 900;
   line-height: 1;
   margin: 0;
-  padding: 1rem 1rem .5rem;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
   text-transform: uppercase;
 }
 h2, h3 {
@@ -53,4 +47,17 @@ h2 + p, h3 + p, h2 + ul, h3 + ul {
 a {
   color: var(--highlight);
   text-decoration: none;
+}
+
+@media only screen and (max-width:500px) {
+  h1 {
+    font-size: 2rem;
+  }
+  body {
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+  main {
+    margin: 1rem auto;
+  }
 }
